@@ -1,0 +1,116 @@
+/* --------------------------------
+    TABLE OF CONTENTS
+-----------------------------------
+    Assets
+    Partials
+
+----- */
+
+/* --------------------------------
+    Assets
+-------------------------------- */
+@import "../assets/bourbon/bourbon";
+@import "../assets/neat/neat";
+@import "../assets/flexslider/flexslider.css";
+
+
+/* --------------------------------
+    Partials
+-------------------------------- */
+@import "variables";
+@import "mixins";
+@import "global";
+@import "typography";
+@import "navigation";
+@import "modules";
+
+
+/* --------------------------------
+    Your styles
+-------------------------------- */
+@import "main";
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+	font-family: 'Open Sans', sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navigation {
+	// color: ;
+}
+.navigation ul {
+	text-align: center;
+}
+
+.navigation ul li {
+	display: inline-block;
+	padding-right: 6em;
+
+}
+
+.eyecatcher {
+	// border-top: 5px solid rgba(179,163,151,1);
+	// border-bottom: 5px solid rgba(179,163,151,1);
+}
+
+.ribbon {
+	background: rgba(179,163,151, 0.48);
+	width: 25em;
+	min-height: 710px;
+	color: white;
+	margin: 0 -2em;
+	margin-left: 10%;
+	// border-left: 6px solid rgba(255,255,255, 0.6);
+	// border-right: 6px solid rgba(255,255,255, 0.6);
+	// border-radius: 5px;
+}
+
+.gifteross {
+	font-size: 2.3em;
+	margin-top:0;
+	padding-top: 1em;
+	font-weight: 500;
+}
+
+h1#names {
+	font-family: 'Parisienne';
+	font-size: 6em;
+	color: white;
+	text-shadow: 2px 6px 6px rgba(0,0,0,0.6);
+	font-weight: 500;
+
+	.andre {
+		line-height: 1em;
+		display: block;
+	}
+	.og {
+		display: block;
+		line-height: 1em;
+		padding-bottom: .25em;
+	}
+	.lisa {
+		display: block;
+		line-height: 1em;
+	}
+}
+
+.tid {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+
+
+
+/* ---------------------------------------------
+    DOCS - REMOVE THIS IF YOU DON'T WANT DOCS
+--------------------------------------------- */
+@import "../docs/sass/docs";
