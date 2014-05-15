@@ -4,7 +4,7 @@
 ----- */
 /* -------------------------------- Assets
 -------------------------------- */
-@import url(../assets/flexslider/flexslider.css);
+@import url(../public/assets/flexslider/flexslider.css);
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* -------------------------------- Partials
@@ -365,15 +365,20 @@ footer.outer { background: #191919 !important; color: #fff; padding-top: 3em; pa
 /* apply a natural box layout model to all elements */
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: "Open Sans", sans-serif; }
+body { font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 
 .navigation ul { text-align: center; }
 
-.navigation ul li { display: inline-block; padding-right: 6em; }
+.navigation ul li { display: inline-block; padding-right: 4em; }
 
-.ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; min-height: 710px; color: white; margin: 0 -2em; margin-left: 10%; }
+.eyecatcher { border-top: 5px solid #b3a397; border-bottom: 5px solid #b3a397; }
+
+.ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; min-height: 710px; color: white; float: left; margin-left: 20%; border-left: 6px solid rgba(255, 255, 255, 0.6); border-right: 6px solid rgba(255, 255, 255, 0.6); }
+.ribbon.right { float: right; margin-right: 20%; }
+
+.broad-ribbon { width: 70em; }
 
 .gifteross { font-size: 2.3em; margin-top: 0; padding-top: 1em; font-weight: 500; }
 
@@ -384,53 +389,10 @@ h1#names .lisa { display: block; line-height: 1em; }
 
 .tid { font-size: 1.5em; margin: 0; }
 
-/* --------------------------------------------- DOCS - REMOVE THIS IF YOU DON'T WANT DOCS
---------------------------------------------- */
-/* -------------------------------- TABLE OF CONTENTS
------------------------------------ Screen sizes Grid Sizes Colors Chosen colors Z-index
+.form { margin: 1em; }
+.form input[type=text] { float: none; }
+.form input[type=checkbox] { margin-right: 1em; vertical-align: middle; }
+.form label { margin-top: 0.5em; cursor: pointer; text-align: center; display: block; padding: 0.1em 0; font: inherit; font-weight: normal; font-size: 1.7em; }
+.form .button:focus { border-color: #1bb776; }
 
------ */
-/* -------------------------------- Screen sizes
--------------------------------- */
-/* -------------------------------- Grid
--------------------------------- */
-/* -------------------------------- Sizes
--------------------------------- */
-/* -------------------------------- Colors
--------------------------------- */
-/* -------------------------------- Chosen colors
--------------------------------- */
-/* -------------------------------- Z-index
--------------------------------- */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-/* -------------------------------- TABLE OF CONTENTS
------------------------------------ General Modules
-
------ */
-/* -------------------------------- General
--------------------------------- */
-.elements { padding: 3em 2em !important; background-color: #fff !important; margin-top: 5em; }
-.elements .inner *:not(blockquote):not(.fa) { margin: 0; }
-.elements .inner xmp { margin-top: 2em !important; margin-bottom: 10px !important; font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New !important; font-size: 0.8em; padding: 1em !important; background: #f0f0f0 !important; white-space: pre-wrap; /* css-3 */ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ word-wrap: break-word; /* Internet Explorer 5.5+ */ }
-
-pre { text-align: left; padding: 0 2em 2em 2em !important; background: none !important; border: none !important; margin: 0 !important; overflow-x: scroll; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; }
-
-.inner h2.docs-title { border-bottom: 2px solid #111111; padding-bottom: 1em; margin-bottom: 2em !important; }
-
-/* -------------------------------- Modules
--------------------------------- */
-.modules .outer:not(.explanation):not(.solid):not(footer):not(.inverted) { background-color: #fff !important; }
-.modules .modules-header { margin-top: 5em; padding-top: 2em; padding-bottom: 2em; }
-.modules .modules-header i { margin-right: 12px; color: #1bb776; }
-.modules .explanation { background: none !important; padding: 0; margin: 3em 0 0 0; box-shadow: none !important; }
-.modules .explanation .inner { text-align: left; padding: 15px 0em; }
-.modules .explanation .inner p { font-size: 1em; margin: 0; padding: 0 1em 0 1em; color: #191919; font-weight: bold; cursor: pointer; }
-.modules .explanation .inner p i { margin-right: 1em !important; color: #1bb776; }
-.modules .explanation .inner pre { font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New !important; font-size: 0.8em; padding: 2em !important; background: #f0f0f0 !important; }
-.modules .explanation-code small { display: block; margin-bottom: 5px; }
-.modules .explanation-code.hidden { display: none; }
-.modules .explanation-code .pln { max-width: 20px !important; }
-
-/* -------------------------------- Examples
--------------------------------- */
+footer.outer { background: #b3a397 !important; color: #191919; padding-top: 0; padding-bottom: 0; }

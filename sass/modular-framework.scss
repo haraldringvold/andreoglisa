@@ -9,9 +9,9 @@
 /* --------------------------------
     Assets
 -------------------------------- */
-@import "../assets/bourbon/bourbon";
-@import "../assets/neat/neat";
-@import "../assets/flexslider/flexslider.css";
+@import "../public/assets/bourbon/bourbon";
+@import "../public/assets/neat/neat";
+@import "../public/assets/flexslider/flexslider.css";
 
 
 /* --------------------------------
@@ -36,7 +36,8 @@
  }
 
 body {
-	font-family: 'Open Sans', sans-serif
+	font-family: 'Open Sans', sans-serif;
+	// background: #b3a397;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation ul li {
 	display: inline-block;
-	padding-right: 6em;
+	padding-right: 4em;
 
 }
 
 .eyecatcher {
-	// border-top: 5px solid rgba(179,163,151,1);
-	// border-bottom: 5px solid rgba(179,163,151,1);
+	border-top: 5px solid rgba(179,163,151,1);
+	border-bottom: 5px solid rgba(179,163,151,1);
 }
 
 .ribbon {
@@ -66,12 +67,24 @@ h1, h2, h3, h4, h5, h6 {
 	width: 25em;
 	min-height: 710px;
 	color: white;
-	margin: 0 -2em;
-	margin-left: 10%;
-	// border-left: 6px solid rgba(255,255,255, 0.6);
-	// border-right: 6px solid rgba(255,255,255, 0.6);
+	float: left;
+	margin-left: 20%;
+	// margin: 0 -2em;
+	border-left: 6px solid rgba(255,255,255, 0.6);
+	border-right: 6px solid rgba(255,255,255, 0.6);
 	// border-radius: 5px;
+
+	&.right {
+		float: right;
+		margin-right: 20%;
+	}
+
 }
+
+.broad-ribbon {
+	width: 70em;
+}
+
 
 .gifteross {
 	font-size: 2.3em;
@@ -107,10 +120,38 @@ h1#names {
 	margin: 0;
 }
 
+.form {
+	margin: 1em;
 
+	input[type=text] {
+		float: none;
+	}
 
+	input[type=checkbox] {
+		margin-right: 1em;
+		vertical-align: middle;
+	}
 
-/* ---------------------------------------------
-    DOCS - REMOVE THIS IF YOU DON'T WANT DOCS
---------------------------------------------- */
-@import "../docs/sass/docs";
+	label {
+		margin-top: 0.5em;
+		cursor: pointer;
+		text-align: center;
+		// text-transform: uppercase;
+		display: block;
+		padding: 0.1em 0;
+		font: inherit;
+		font-weight: normal;
+		font-size: 1.7em;
+	}
+
+	.button:focus {
+		border-color: #1bb776;
+	}
+}
+
+footer.outer {
+	background: rgba(179,163,151, 1) !important;
+	color: #191919 ;
+	padding-top: 0;
+	padding-bottom: 0;
+}

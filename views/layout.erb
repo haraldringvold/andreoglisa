@@ -30,55 +30,50 @@
         <ul>
           <li class="title">
             <h1>
-              <a href="#">André og Lisa</a>
+              <a href="/">André og Lisa</a>
             </h1>
           </li>
           <li>
-            <a href="#">Oss</a>
+            <a href="/svar">Svar</a>
           </li>
           <li>
-            <a href="#">Framtidsplaner</a>
-          </li>
-          <li class="active">
-            <a href="#">Ønskeliste</a>
+            <a href="/onskeliste">Ønskeliste</a>
           </li>
           <li>
-            <a href="#">Svar</a>
+            <a href="/info">Nytting informasjon</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
 
-  <div class=" eyecatcher" style="min-height: 700px; background-image: url('images/LSP14012.jpg');">
+  <%= yield %>
 
-      <div class="ribbon">
-        <h1 class="gifteross">Vi gifter oss!</h1>
-        <h1 id="names">
-          <span class="andre">André</span>
-          <span class="og">&</span>
-          <span class="lisa">Lisa</span>
-        </h1>
-        <p class="tid">
-          27. juli <br>
-          Spin kirke <br>
-          Kl 13.00
-        </p>
-      </div>
-
-  </div>
-
-
-
-
-  <!-- Paste your modules here! -->
-
-
-
+  <footer class="outer">
+    <div class="inner">
+      <h3>
+        Title
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <!-- <ul class="icon-row large">
+        <li>
+          <a class="white" href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a class="white" href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="white" href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul> -->
+    </div>
+  </footer>
 
 
   <!-- Javascripts -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="javascripts/jquery-1.10.2.min"></script>
   <script src="assets/flexslider/jquery.flexslider.js"></script>
   <script src="javascripts/modular-framework.js"></script>
 
