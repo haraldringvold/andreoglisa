@@ -69,10 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	float: left;
 	margin-left: 20%;
-	// margin: 0 -2em;
 	border-left: 6px solid rgba(255,255,255, 0.6);
 	border-right: 6px solid rgba(255,255,255, 0.6);
-	// border-radius: 5px;
 
 	&.right {
 		float: right;
@@ -145,7 +143,7 @@ h1#names {
 	}
 
 	.button:focus {
-		border-color: #1bb776;
+		border-color: $primary-color;
 	}
 }
 
