@@ -4,7 +4,6 @@
 ----- */
 /* -------------------------------- Assets
 -------------------------------- */
-@import url(../public/assets/flexslider/flexslider.css);
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* -------------------------------- Partials
@@ -32,7 +31,7 @@
 /* -------------------------------- Mixins
 -------------------------------- */
 /* -------------------------------- TABLE OF CONTENTS
------------------------------------ General Wrappers     Buttons Forms
+----------------------------------- General Wrappers Buttons Forms
 
 ----- */
 /* -------------------------------- General
@@ -44,9 +43,9 @@ html { overflow-x: hidden; }
 body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
 body.boxed { background: #ddd; }
 
-::-moz-selection { background: #ff4136; text-shadow: none; }
+::-moz-selection { background: #1bb776; text-shadow: none; }
 
-::selection { background: #ff4136; text-shadow: none; }
+::selection { background: #1bb776; text-shadow: none; }
 
 ::-webkit-input-placeholder { color: #c3c3c3; }
 
@@ -370,10 +369,12 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 .navigation ul { text-align: center; }
 
 .navigation ul li { display: inline-block; padding-right: 4em; }
+@media screen and (max-width: 900px) { .navigation ul li { padding-right: 0; } }
 
 .eyecatcher { border-top: 5px solid #b3a397; border-bottom: 5px solid #b3a397; }
 
 .ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; color: white; float: left; margin-left: 20%; border-left: 6px solid rgba(255, 255, 255, 0.6); border-right: 6px solid rgba(255, 255, 255, 0.6); }
+@media screen and (max-width: 900px) { .ribbon { background: rgba(0, 0, 0, 0.48); border: none; margin-left: 0; width: 100%; padding-bottom: 40px !important; } }
 .ribbon h1.page-title { font-size: 2.3em; font-weight: 500; margin-bottom: 0; }
 .ribbon.right { float: right; margin-right: 20%; }
 
@@ -381,11 +382,14 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 .onskeliste li, .svar li, .info li { text-align: left; }
 
 .gifteross { font-size: 2.3em; margin-top: 0; padding-top: 1em; font-weight: 500; }
+@media screen and (max-width: 900px) { .gifteross { font-size: 1.9em; } }
 
 h1#names { font-family: 'Parisienne'; font-size: 6em; color: white; text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.6); font-weight: 500; }
+@media screen and (max-width: 900px) { h1#names { font-size: 2.7em; } }
 h1#names .andre { line-height: 1em; display: block; }
 h1#names .og { display: block; line-height: 1em; padding-bottom: .25em; }
 h1#names .lisa { display: block; line-height: 1em; }
+@media screen and (max-width: 900px) { h1#names .andre, h1#names .og, h1#names .lisa { display: inline-block; } }
 
 .tid { font-size: 1.5em; margin: 0; }
 
@@ -403,12 +407,3 @@ dl.inline dd + dd { float: none; }
 dl.inline dt { font-weight: bold; }
 
 footer.outer { background: #b3a397 !important; color: #191919; padding-top: 0; padding-bottom: 0; }
-
-/* small screens ----------- */
-@media only screen and (min-width: 320px) { min-height: 30em; }
-/* medium screens ----------- */
-@media only screen and (min-width: 768px) { .ribbon { min-height: 30em; } }
-/* Large screens ----------- */
-@media only screen and (min-width: 1025px) { .ribbon { min-height: 45em; } }
-/* XLarge screens ----------- */
-@media only screen and (min-width: 1600px) { /* Styles */ }

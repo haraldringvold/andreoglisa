@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 .navigation ul li {
 	display: inline-block;
 	padding-right: 4em;
+
+	@include media($tablet) {
+		padding-right: 0;
+	}
 }
 
 // .top-nav .inner {
@@ -56,6 +60,14 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 20%;
 	border-left: 6px solid rgba(255,255,255, 0.6);
 	border-right: 6px solid rgba(255,255,255, 0.6);
+
+	@include media($tablet) {
+		background: rgba(0, 0, 0, 0.48);
+		border: none;
+		margin-left: 0;
+		width: 100%;
+		padding-bottom: 40px !important;
+	}
 
 	h1.page-title {
 		font-size: 2.3em;
@@ -84,6 +96,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top:0;
 	padding-top: 1em;
 	font-weight: 500;
+
+	@include media($tablet) {
+		font-size: 1.9em;
+	}
 }
 
 h1#names {
@@ -92,6 +108,10 @@ h1#names {
 	color: white;
 	text-shadow: 2px 6px 6px rgba(0,0,0,0.6);
 	font-weight: 500;
+
+	@include media($tablet) {
+		font-size: 2.7em;
+	}
 
 	.andre {
 		line-height: 1em;
@@ -105,6 +125,12 @@ h1#names {
 	.lisa {
 		display: block;
 		line-height: 1em;
+	}
+
+	@include media($tablet) {
+		.andre, .og, .lisa {
+			display: inline-block;
+		}
 	}
 }
 
@@ -171,32 +197,5 @@ footer.outer {
 	color: #191919 ;
 	padding-top: 0;
 	padding-bottom: 0;
-}
-
-/* small screens ----------- */
-@media only screen
-and (min-width : 320px) {
-	min-height: 30em;
-}
-
-/* medium screens ----------- */
-@media only screen
-and (min-width : 768px) {
-	.ribbon {
-		min-height: 30em;
-	}
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1025px) {
-	.ribbon {
-		min-height: 45em;
-	}
-}
-/* XLarge screens ----------- */
-@media only screen
-and (min-width : 1600px) {
-/* Styles */
 }
 
