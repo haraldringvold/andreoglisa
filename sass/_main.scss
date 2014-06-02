@@ -52,6 +52,22 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 5px solid rgba(179,163,151,1);
 }
 
+.info {
+	background-image: url('/images/LSP14619.jpg');
+}
+
+.svar {
+	background-image: url('/images/LSP13796.jpg');
+}
+
+.frontpage {
+	background-image: url('/images/LSP14012.jpg');
+}
+
+.onskeliste {
+	background-image: url('/images/LSP13925.jpg');
+}
+
 .ribbon {
 	background: rgba(179,163,151, 0.48);
 	width: 25em;
@@ -60,8 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 20%;
 	border-left: 6px solid rgba(255,255,255, 0.6);
 	border-right: 6px solid rgba(255,255,255, 0.6);
+	min-height: 700px;
 
 	@include media($tablet) {
+		min-height: initial;
 		background: rgba(0, 0, 0, 0.48);
 		border: none;
 		margin-left: 0;
@@ -80,16 +98,17 @@ h1, h2, h3, h4, h5, h6 {
 		margin-right: 20%;
 	}
 
-}
-
-.onskeliste, .svar, .info {
-	text-align: left;
-	padding: 0 2em;
-
-	li {
+	.onskeliste &, .svar &, .info & {
 		text-align: left;
+		padding: 0 2em 2em 2em;
+
+		li {
+			text-align: left;
+		}
 	}
+
 }
+
 
 .gifteross {
 	font-size: 2.3em;
