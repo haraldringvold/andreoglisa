@@ -373,16 +373,16 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 
 .eyecatcher { border-top: 5px solid #b3a397; border-bottom: 5px solid #b3a397; }
 
-.info { background-image: url("/images/LSP14619.jpg"); }
+.info { background-image: url("/images/LSP14619.png"); }
 
-.svar { background-image: url("/images/LSP13796.jpg"); }
+.svar { background-image: url("/images/LSP13796.png"); }
 
-.frontpage { background-image: url("/images/LSP14012.jpg"); }
+.frontpage { background-image: url("/images/LSP14012.png"); }
 
-.onskeliste { background-image: url("/images/LSP13925.jpg"); }
+.onskeliste { background-image: url("/images/LSP13925.png"); }
 
 .ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; color: white; float: left; margin-left: 20%; border-left: 6px solid rgba(255, 255, 255, 0.6); border-right: 6px solid rgba(255, 255, 255, 0.6); min-height: 700px; }
-@media screen and (max-width: 900px) { .ribbon { min-height: initial; background: rgba(0, 0, 0, 0.48); border: none; margin-left: 0; width: 100%; padding-bottom: 40px !important; } }
+@media screen and (max-width: 900px) { .ribbon { min-height: inherit; background: rgba(0, 0, 0, 0.48); border: none; margin-left: 0; width: 100%; padding-bottom: 40px !important; } }
 .ribbon h1.page-title { font-size: 2.3em; font-weight: 500; margin-bottom: 0; }
 .ribbon.right { float: right; margin-right: 20%; }
 .onskeliste .ribbon, .svar .ribbon, .info .ribbon { text-align: left; padding: 0 2em 2em 2em; }
