@@ -404,8 +404,12 @@ h1#names .lisa { display: block; line-height: 1em; }
 .form input[type=text] { float: none; }
 .form input[type=checkbox] { margin-right: 1em; vertical-align: middle; }
 .form label { margin-top: 0.5em; cursor: pointer; display: block; padding: 0.1em 0; font: inherit; font-weight: normal; font-size: 1.7em; }
+.form input[type=radio] { margin-right: 10px; vertical-align: middle; }
 .form input[type="submit"] { margin: 0; margin-top: 2em; }
 .form .button:focus { border-color: #ff4136; }
+.form .feedback { margin-top: 1em; padding: 1em; display: inline-block; border-radius: 5px; }
+.form .feedback.success { background: #1bb776; }
+.form .feedback.error { background: #E40909; }
 
 dl.inline { margin-top: 0; }
 dl.inline dt, dl.inline dl.inline dd { float: left; margin: 0 0.5em 0 0; }

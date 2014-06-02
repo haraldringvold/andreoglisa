@@ -46,7 +46,7 @@ $(function() {
 
     if (checkExists($(".flexslider"))) {
         initFlexslider();
-    }    
+    }
 })
 
 

@@ -3,12 +3,17 @@
 
   <div class="ribbon">
     <h1 class="page-title">Kommer du?</h1>
-    <form class="form" action="">
-      <input id="name_input" type="text" placeholder="Navn" name="name">
+    <form class="form" action="http://ravenform.herokuapp.com/replies" method="POST">
+      <input type="hidden" name="event_id" value="3">
+      <input id="name_input" type="text" placeholder="Navn" name="reply[17]" required=required>
       <label>
-        <input id="attending_input" type="checkbox" name="attending">Ja, jeg kommer
+        <input id="attending_input" type="radio" name="reply[18]" value="Ja, jeg kommer" >Ja, jeg kommer
       </label>
-      <input type="submit" class="button white" value="Send svar" />
+      <label>
+        <input id="not_attending_input" type="radio" name="reply[18]" value="Nei, jeg kommer ikke">Nei, jeg kommer ikke
+      </label>
+      <input type="submit" id="submit_button" class="button white" value="Send svar" />
+      <div class="feedback"></div>
     </form>
     <p>
       Hvis du har spørsmål eller problemer så kan du ringe:
