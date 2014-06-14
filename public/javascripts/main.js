@@ -13,7 +13,8 @@ function sendForm() {
   var data = {
     'event_id': 3,
     'reply[17]': $('#name_input').val(),
-    'reply[18]': $('input[name="reply[18]"]:checked').val()
+    'reply[18]': $('input[name="reply[18]"]:checked').val(),
+    'reply[24]': $('input[name="reply[24]"]').is(':checked') ? $('input[name="reply[24]"]').val() : 'Nei'
   }
 
   var result = $.ajax({

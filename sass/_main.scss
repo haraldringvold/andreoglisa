@@ -22,221 +22,227 @@
  }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	// background: #b3a397;
+  font-family: 'Open Sans', sans-serif;
+  // background: #b3a397;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navigation ul {
-	text-align: center;
+  text-align: center;
 }
 
 .navigation ul li {
-	display: inline-block;
-	padding-right: 4em;
+  display: inline-block;
+  padding-right: 4em;
 
-	@include media($tablet) {
-		padding-right: 0;
-	}
+  @include media($tablet) {
+    padding-right: 0;
+  }
 }
 
 // .top-nav .inner {
-// 	padding: 0!important;
+//  padding: 0!important;
 // }
 
 .eyecatcher {
-	border-top: 5px solid rgba(179,163,151,1);
-	border-bottom: 5px solid rgba(179,163,151,1);
+  border-top: 5px solid rgba(179,163,151,1);
+  border-bottom: 5px solid rgba(179,163,151,1);
 }
 
 .info {
-	background-image: url('/images/LSP14619.png');
+  background-image: url('/images/LSP14619.png');
 }
 
 .svar {
-	background-image: url('/images/LSP13796.png');
+  background-image: url('/images/LSP13796.png');
 }
 
 .frontpage {
-	background-image: url('/images/LSP14012.png');
+  background-image: url('/images/LSP14012.png');
 }
 
 .onskeliste {
-	background-image: url('/images/LSP13925.png');
+  background-image: url('/images/LSP13925.png');
 }
 
 .ribbon {
-	background: rgba(179,163,151, 0.48);
-	width: 25em;
-	color: white;
-	float: left;
-	margin-left: 20%;
-	border-left: 6px solid rgba(255,255,255, 0.6);
-	border-right: 6px solid rgba(255,255,255, 0.6);
-	min-height: 700px;
+  background: rgba(179,163,151, 0.48);
+  width: 25em;
+  color: black;
+  float: left;
+  margin-left: 20%;
+  border-left: 6px solid rgba(255,255,255, 0.6);
+  border-right: 6px solid rgba(255,255,255, 0.6);
+  min-height: 700px;
 
-	@include media($tablet) {
-		min-height: inherit;
-		background: rgba(0, 0, 0, 0.48);
-		border: none;
-		margin-left: 0;
-		width: 100%;
-		padding-bottom: 40px !important;
-	}
+  @include media($tablet) {
+    min-height: inherit;
+    background: rgba(0, 0, 0, 0.48);
+    border: none;
+    margin-left: 0;
+    width: 100%;
+    padding-bottom: 40px !important;
+  }
 
-	h1.page-title {
-		font-size: 2.3em;
-		font-weight: 500;
-		margin-bottom: 0;
-	}
+  h1.page-title {
+    font-size: 2.3em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 
-	&.right {
-		float: right;
-		margin-right: 20%;
-	}
+  &.right {
+    float: right;
+    margin-right: 20%;
+  }
 
-	.onskeliste &, .svar &, .info & {
-		text-align: left;
-		padding: 0 2em 2em 2em;
+  .logo {
+    width: 100%;
+    margin-left: 0.3em
+  }
 
-		li {
-			text-align: left;
-		}
-	}
+  .onskeliste &, .svar &, .info & {
+    color: white;
+    text-align: left;
+    padding: 0 2em 2em 2em;
+
+    li {
+      text-align: left;
+    }
+  }
 
 }
 
 
 .gifteross {
-	font-size: 2.3em;
-	margin-top:0;
-	padding-top: 1em;
-	font-weight: 500;
+  font-size: 2.3em;
+  margin-top:0;
+  padding-top: 1em;
+  font-weight: 500;
 
-	@include media($tablet) {
-		font-size: 1.9em;
-	}
+  @include media($tablet) {
+    font-size: 1.9em;
+  }
 }
 
 h1#names {
-	font-family: 'Parisienne';
-	font-size: 6em;
-	color: white;
-	text-shadow: 2px 6px 6px rgba(0,0,0,0.6);
-	font-weight: 500;
+  font-family: 'Parisienne';
+  font-size: 6em;
+  color: white;
+  text-shadow: 2px 6px 6px rgba(0,0,0,0.6);
+  font-weight: 500;
 
-	@include media($tablet) {
-		font-size: 2.7em;
-	}
+  @include media($tablet) {
+    font-size: 2.7em;
+  }
 
-	.andre {
-		line-height: 1em;
-		display: block;
-	}
-	.og {
-		display: block;
-		line-height: 1em;
-		padding-bottom: .25em;
-	}
-	.lisa {
-		display: block;
-		line-height: 1em;
-	}
+  .andre {
+    line-height: 1em;
+    display: block;
+  }
+  .og {
+    display: block;
+    line-height: 1em;
+    padding-bottom: .25em;
+  }
+  .lisa {
+    display: block;
+    line-height: 1em;
+  }
 
-	@include media($tablet) {
-		.andre, .og, .lisa {
-			display: inline-block;
-		}
-	}
+  @include media($tablet) {
+    .andre, .og, .lisa {
+      display: inline-block;
+    }
+  }
 }
 
 .tid {
-	font-size: 1.5em;
-	margin: 0;
+  font-size: 1.9em;
+  margin: 0;
 }
 
 .form {
-	margin: 0;
-	padding-bottom: 0.5em;
+  margin: 0;
+  padding-bottom: 0.5em;
 
-	input[type=text] {
-		float: none;
-	}
+  input[type=text] {
+    float: none;
+  }
 
-	input[type=checkbox] {
-		margin-right: 1em;
-		vertical-align: middle;
-	}
+  input[type=checkbox] {
+    margin-right: 1em;
+    vertical-align: middle;
+  }
 
-	label {
-		margin-top: 0.5em;
-		cursor: pointer;
-		// text-align: center;
-		display: block;
-		padding: 0.1em 0;
-		font: inherit;
-		font-weight: normal;
-		font-size: 1.7em;
-	}
+  label {
+    margin-top: 0.5em;
+    cursor: pointer;
+    // text-align: center;
+    display: block;
+    padding: 0.1em 0;
+    font: inherit;
+    font-weight: normal;
+    font-size: 1.7em;
+  }
 
-	input[type=radio] {
-		margin-right: 10px;
-		vertical-align: middle;
-	}
+  input[type=radio] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
 
-	input[type="submit"] {
-		margin:0;
-		margin-top: 2em;
-	}
+  input[type="submit"] {
+    margin:0;
+    margin-top: 2em;
+  }
 
-	.button:focus {
-		border-color: $primary-color;
-	}
+  .button:focus {
+    border-color: $primary-color;
+  }
 
-	.feedback {
-		margin-top: 1em;
-		padding: 1em;
-		display: inline-block;
-		border-radius: 5px;
+  .feedback {
+    margin-top: 1em;
+    padding: 1em;
+    display: inline-block;
+    border-radius: 5px;
 
-		&.success {
-			background: #1bb776;
-		}
+    &.success {
+      background: #1bb776;
+    }
 
-		&.error {
-			background: #E40909;
-		}
+    &.error {
+      background: #E40909;
+    }
 
-	}
+  }
 }
 
 
 
 dl.inline {
-	margin-top: 0;
+  margin-top: 0;
 
-	dt, dl.inline dd {
-	  float: left;
-	  margin: 0 0.5em 0 0;
-	}
-	dd + dt, dd + dd {
-  	clear: left
-	}
-	dd + dd {
-	  float: none
-	}
-	dt {
-	  font-weight: bold
-	}
+  dt, dl.inline dd {
+    float: left;
+    margin: 0 0.5em 0 0;
+  }
+  dd + dt, dd + dd {
+    clear: left
+  }
+  dd + dd {
+    float: none
+  }
+  dt {
+    font-weight: bold
+  }
 }
 
 footer.outer {
-	background: rgba(179,163,151, 1) !important;
-	color: #191919 ;
-	padding-top: 0;
-	padding-bottom: 0;
+  background: rgba(179,163,151, 1) !important;
+  color: #191919 ;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
