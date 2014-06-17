@@ -381,12 +381,14 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 
 .onskeliste { background-image: url("/images/LSP13925.png"); }
 
-.ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; color: black; float: left; margin-left: 20%; border-left: 6px solid rgba(255, 255, 255, 0.6); border-right: 6px solid rgba(255, 255, 255, 0.6); min-height: 700px; }
+a:hover { color: white; }
+
+.ribbon { background: rgba(179, 163, 151, 0.48); width: 25em; color: white; float: left; margin-left: 20%; border-left: 6px solid rgba(255, 255, 255, 0.6); border-right: 6px solid rgba(255, 255, 255, 0.6); min-height: 700px; }
 @media screen and (max-width: 900px) { .ribbon { min-height: inherit; background: rgba(0, 0, 0, 0.48); border: none; margin-left: 0; width: 100%; padding-bottom: 40px !important; } }
 .ribbon h1.page-title { font-size: 2.3em; font-weight: 500; margin-bottom: 0; }
 .ribbon.right { float: right; margin-right: 20%; }
 .ribbon .logo { width: 100%; margin-left: 0.3em; }
-.onskeliste .ribbon, .svar .ribbon, .info .ribbon { color: white; text-align: left; padding: 0 2em 2em 2em; }
+.onskeliste .ribbon, .svar .ribbon, .info .ribbon { text-align: left; padding: 0 2em 2em 2em; }
 .onskeliste .ribbon li, .svar .ribbon li, .info .ribbon li { text-align: left; }
 
 .gifteross { font-size: 2.3em; margin-top: 0; padding-top: 1em; font-weight: 500; }
