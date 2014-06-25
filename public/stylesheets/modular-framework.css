@@ -391,7 +391,7 @@ a:hover { color: white; }
 .onskeliste .ribbon, .svar .ribbon, .info .ribbon { text-align: left; padding: 0 2em 2em 2em; }
 .onskeliste .ribbon li, .svar .ribbon li, .info .ribbon li { text-align: left; }
 
-.gifteross { font-size: 2.3em; margin-top: 0; padding-top: 1em; font-weight: 500; }
+.gifteross { font-size: 2.3em; margin-top: 0; padding: 1em 1em 0 1em; font-weight: 500; }
 @media screen and (max-width: 900px) { .gifteross { font-size: 1.9em; } }
 
 h1#names { font-family: 'Parisienne'; font-size: 6em; color: white; text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.6); font-weight: 500; }

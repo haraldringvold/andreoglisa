@@ -15,8 +15,8 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="stylesheets/modular-framework.css">
+  <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/stylesheets/modular-framework.css">
 </head>
 
 <!-- Remove class for full-width layout -->
@@ -28,17 +28,17 @@
         <ul>
           <li>
             <h1>
-              <a href="/">André og Lisa</a>
+              <a href="<%= locale_link %>">André og Lisa</a>
             </h1>
           </li>
           <li class="<%= current?('svar') %>">
-            <a href="/svar">Svar</a>
+            <a href="<%= locale_link %>svar">Svar</a>
           </li>
           <li class="<%= current?('onskeliste') %>">
-            <a href="/onskeliste">Ønskeliste</a>
+            <a href="<%= locale_link %>onskeliste">Ønskeliste</a>
           </li>
           <li class="<%= current?('info') %>">
-            <a href="/info">Nytting informasjon</a>
+            <a href="<%= locale_link %>info">Nytting informasjon</a>
           </li>
         </ul>
       </nav>
@@ -72,8 +72,8 @@
 
   <!-- Javascripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-  <script src="javascripts/modular-framework.js"></script>
-  <script src="javascripts/main.js"></script>
+  <script src="/javascripts/modular-framework.js"></script>
+  <script src="/javascripts/main.js"></script>
 
 </body>
 </html>
