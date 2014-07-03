@@ -24,7 +24,7 @@ helpers do
   end
 
   def locale_link
-    if settings.default_locale == session[:locale]
+    if settings.default_locale == session[:locale] or session[:locale] == nil
       "/"
     else
       "/#{current_locale}/"
