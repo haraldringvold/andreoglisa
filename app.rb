@@ -5,10 +5,10 @@ require 'i18n'
 require 'sinatra/support/i18nsupport'
 
 configure do
-	register Sinatra::I18nSupport
-	I18n.enforce_available_locales = false
-	load_locales './config/locales'
-	set :default_locale, 'nb'
+  register Sinatra::I18nSupport
+  I18n.enforce_available_locales = false
+  load_locales './config/locales'
+  set :default_locale, 'nb'
 end
 
 
@@ -24,9 +24,11 @@ helpers do
   end
 
   def locale_link
-    puts session[:locale]
-    puts settings.default_locale
-    "/#{current_locale}/" if settings.default_locale == session[:locale]
+    if settings.default_locale == session[:locale]
+      "/"
+    else
+      "/#{current_locale}/"
+    end
   end
 end
 
@@ -40,13 +42,13 @@ get '/' do
 end
 
 get '/svar' do
-	erb :svar
+  erb :svar
 end
 
 get '/onskeliste' do
-	erb :onskeliste
+  erb :onskeliste
 end
 
 get '/info' do
-	erb :info
+  erb :info
 end
