@@ -1,6 +1,6 @@
 # encoding: utf-8
 require 'sinatra'
-require "sinatra/content_for"
+require 'sinatra/content_for'
 require 'i18n'
 require 'sinatra/support/i18nsupport'
 
