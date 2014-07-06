@@ -13,7 +13,6 @@ end
 
 
 before '/:locale/*' do
-  puts params[:locale]
   session[:locale] = params[:locale] if params[:locale]
   request.path_info = '/' + params[:splat ][0]
 end

@@ -370,6 +370,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 
 .navigation ul li { display: inline-block; padding-right: 4em; }
 @media screen and (max-width: 900px) { .navigation ul li { padding-right: 0; } }
+.navigation ul li.change-language { color: #888; }
 
 .eyecatcher { border-top: 5px solid #b3a397; border-bottom: 5px solid #b3a397; }
 

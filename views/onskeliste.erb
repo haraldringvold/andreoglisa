@@ -1,19 +1,9 @@
-<% content_for :title do %>Ønskeliste<% end %>
+<% content_for :title do %><%= t 'wishlist.title' %><% end %>
 <div class="eyecatcher onskeliste">
 
   <div class="ribbon">
-    <h1 class="page-title">Ønskeliste</h1>
-    <p>Vi har lagt ut våre ønskelister på følgende butikker:</p>
-
-    <ul>
-      <li>Tilbords (Farsund Glassmagasin)</li>
-      <li><a href="https://www.kitchn.no/bryllup/vis-liste/?WishListId=47799">Kitch´n Lyngdal</a></li>
-      <li>Bohus Lyngdal</li>
-    </ul>
-
-    <p>Og om du kommer langveis fra, kan kanskje gavekort være en god idé:</p>
-
-    <a href="http://www.ikea.com/ms/no_NO/customer_service/ikea_services/gavekort.html">Gavekort fra IKEA</a>
+    <h1 class="page-title"><%= t 'wishlist.title' %></h1>
+    <%= t 'wishlist.content' %>
   </div>
 
 </div>

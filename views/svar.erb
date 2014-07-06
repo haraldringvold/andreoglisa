@@ -1,37 +1,30 @@
-<% content_for :title do %>Svar<% end %>
+<% content_for :title do %><%= t 'answer.title' %><% end %>
 <div class="eyecatcher svar">
 
   <div class="ribbon">
-    <h1 class="page-title">Kommer du?</h1>
+    <h1 class="page-title"><%= t 'answer.title' %></h1>
     <form class="form" action="http://ravenform.herokuapp.com/replies" method="POST">
       <input type="hidden" name="event_id" value="3">
 
-      <input id="name_input" type="text" placeholder="Navn" name="reply[17]" required=required>
+      <input id="name_input" type="text" placeholder="<%= t 'answer.name' %>" name="reply[17]" required=required>
 
       <label>
-        <input id="attending_input" type="radio" name="reply[18]" value="Ja, jeg kommer" >Ja, jeg kommer
+        <input id="attending_input" type="radio" name="reply[18]" value="Ja, jeg kommer" ><%= t 'answer._yes' %>
       </label>
 
       <label>
-        <input id="not_attending_input" type="radio" name="reply[18]" value="Nei, jeg kommer ikke">Nei, jeg kommer ikke
+        <input id="not_attending_input" type="radio" name="reply[18]" value="Nei, jeg kommer ikke"><%= t 'answer._no' %>
       </label>
 
       <label>
-        <input id="not_attending_input" type="checkbox" name="reply[24]" value="Trenger overnatting">Trenger hjelp med overnatting
+        <input id="not_attending_input" type="checkbox" name="reply[24]" value="Trenger overnatting"><%= t 'answer.accommodation' %>
       </label>
 
-      <input type="submit" id="submit_button" class="button white" value="Send svar" />
+      <input type="submit" id="submit_button" class="button white" value="<%= t 'answer.send' %>" />
 
       <div class="feedback"></div>
     </form>
-    <p>NB: Send inn for hvert familiemedlem som kommer.</p>
-    <p>
-      Hvis du har spørsmål eller problemer så kan du ringe:
-    </p>
-      <dl class="inline">
-        <dt>André:</dt> <dd>905 86 984</dd>
-        <dt>Lisas:</dt> <dd>97408453</dd>
-        <dt>Janne Bulæg:</dt> <dd>473 75 713</dd>
-      </dl>
+    <p><%= t 'answer.note' %></p>
+    <%= t 'answer.questions' %>
   </div>
 </div>

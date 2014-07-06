@@ -1,13 +1,51 @@
 ---
 en:
-  getting_married: We're getting married!
-  date: >
+  menu:
+    answer: RSVP
+    info: Information
+    wishlist: Wishlist
+    change_language: Norsk versjon
+    locale_link: '/'
+  index:
+    getting_married: We're getting married!
+    date: >
       November 22<sup>th</sup> <br>
       Spind Church <br>
       01.00 pm
+  answer:
+    title: Will you come?
+    name: Name
+    _yes: Yes, I will
+    _no: No, I will not
+    accommodation: Need help with accommodation
+    send: Send
+    note: 'Note: Submit for each family member'
+    questions: >
+      <p>
+        If you have any questions or problems, please call:
+      </p>
+      <dl class="inline">
+        <dt>André:</dt> <dd>+47 905 86 984</dd>
+        <dt>Lisas:</dt> <dd>+47 974 08 453</dd>
+        <dt>Janne Bulæg:</dt> <dd>+47 473 75 713</dd>
+      </dl>
+  wishlist:
+    title: Wishlist
+    content: >
+      <p>We have posted our wish list at the following stores:</p>
+      <ul>
+        <li>Tilbords (Farsund Glassmagasin)</li>
+        <li><a href="https://www.kitchn.no/bryllup/vis-liste/?WishListId=47799">Kitch´n Lyngdal</a></li>
+        <li>Bohus Lyngdal</li>
+      </ul>
+      <p>If you come from afar, a gift card kan might be a good idea:</p>
+      <a href="http://www.ikea.com/ms/no_NO/customer_service/ikea_services/gavekort.html" target="_blank">Gift cards from IKEA</a>
   info:
     title: Information
     content: >
-      Date: Saturday 22.11.2014 <br>
-      Vielsen starter kl. 13:00 i Spind kirke i Farsund kommune. <br>
-      Festen fortsetter på Husan (Farsund sentrum). Drene åpnes kl. 16:00
+      <p>
+        Date: Saturday,  11/22/2014 <br>
+        The ceremony will start at 13.00 in Spind Church in Farsund municipality. <br />
+        The party continues on Husan (Farsund center). <br />
+        Doors will open at 4.00 p.m. <br />
+      </p>

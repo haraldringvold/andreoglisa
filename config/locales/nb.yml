@@ -1,13 +1,50 @@
 ---
 nb:
-  getting_married: Vi gifter oss!
-  date: >
+  menu:
+    answer: Svar
+    info: Nytting informasjon
+    wishlist: Ønskeliste
+    change_language: English version
+    locale_link: '/en'
+  index:
+    getting_married: Vi gifter oss!
+    date: >
       22. November <br>
       Spind kirke <br>
       Kl 13.00
-  info:
-    title: Nyttig informasjon
+  answer:
+    title: Kommer du?
+    name: Navn
+    _yes: Ja, jeg kommer
+    _no: Nei, jeg kommer ikke
+    accommodation: Trenger hjelp med overnatting
+    send: Send
+    note: 'NB: Send inn for hvert familiemedlem som kommer.'
+    questions: >
+      <p>
+        Hvis du har spørsmål eller problemer så kan du ringe:
+      </p>
+      <dl class="inline">
+        <dt>André:</dt> <dd>905 86 984</dd>
+        <dt>Lisas:</dt> <dd>97408453</dd>
+        <dt>Janne Bulæg:</dt> <dd>473 75 713</dd>
+      </dl>
+  wishlist:
+    title: Ønskeliste
     content: >
-      Dato: Lørdag 22.11.2014 <br>
-      Vielsen starter kl. 13:00 i Spind kirke i Farsund kommune. <br>
-      Festen fortsetter på Husan (Farsund sentrum). Dørene åpnes kl. 16:00
+      <p>Vi har lagt ut våre ønskelister på følgende butikker:</p>
+      <ul>
+        <li>Tilbords (Farsund Glassmagasin)</li>
+        <li><a href="https://www.kitchn.no/bryllup/vis-liste/?WishListId=47799">Kitch´n Lyngdal</a></li>
+        <li>Bohus Lyngdal</li>
+      </ul>
+      <p>Og om du kommer langveis fra, kan kanskje gavekort være en god idé:</p>
+      <a href="http://www.ikea.com/ms/no_NO/customer_service/ikea_services/gavekort.html" target="_blank">Gavekort fra IKEA</a>
+  info:
+    title: Nytting informasjon
+    content: >
+      <p>
+        Dato: Lørdag 22.11.2014 <br>
+        Vielsen starter kl. 13:00 i Spind kirke i Farsund kommune. <br>
+        Festen fortsetter på Husan (Farsund sentrum). Dørene åpnes kl. 16:00
+      </p>
