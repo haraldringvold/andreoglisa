@@ -402,7 +402,7 @@ h1#names .og { display: block; line-height: 1em; padding-bottom: .25em; }
 h1#names .lisa { display: block; line-height: 1em; }
 @media screen and (max-width: 900px) { h1#names .andre, h1#names .og, h1#names .lisa { display: inline-block; } }
 
-.tid { font-size: 1.9em; margin: 0; }
+.tid { font-size: 1.9em; margin: 0; margin-bottom: 2.0em; }
 
 .form { margin: 0; padding-bottom: 0.5em; }
 .form input[type=text] { float: none; }
